@@ -5,11 +5,11 @@ from ppo_loop import ppo_loop
 
 if __name__ == "__main__":
     # 🔹 1. Entraîner le modèle SFT
-    print("🚀 Entraînement du modèle SFT...")
+    print(" Entraînement du modèle SFT...")
     model, tokenizer = train_sft()
 
     # 🔹 2. Initialiser le reward model
-    print("🏗️ Initialisation du Reward Model...")
+    print(" Initialisation du Reward Model...")
     rm = RewardModel()
 
     # 🔹 3. Définir les prompts de test
@@ -19,5 +19,5 @@ if __name__ == "__main__":
     ]
 
     # 🔹 4. Lancer la PPO loop
-    print("🔁 Lancement de la PPO loop...")
+    print(" Lancement de la PPO loop...")
     ppo_loop(model, tokenizer, rm, prompts)
