@@ -1,0 +1,6 @@
+transformers
+datasets
+trl
+accelerate
+wandb
+torch
