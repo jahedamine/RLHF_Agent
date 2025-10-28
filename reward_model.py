@@ -23,4 +23,4 @@ class RewardModel(torch.nn.Module):
 if __name__ == "__main__":
     rm = RewardModel()
     score = rm.score("What is RLHF?", "RLHF is reinforcement learning with human feedback.")
-    print(f"🏆 Score: {score:.4f}")
+    print(f" Score: {score:.4f}")
