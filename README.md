@@ -51,7 +51,7 @@ Le dataset contient des paires `Instruction` / `Response` structurées, idéales
 ---
 
 ## 🔜 Extensions prévues
-ce projet est une version initiale du projet GenRL qui aura comme amelioration les extensions suivantes ensuite :
+ce projet est une version initiale du projet GenRL qui aura comme amelioration les extensions suivantes :
 - RM miroir (jugement par posture)
 - Juges multiples (clarté, style, profondeur)
 - Mémoire longue
