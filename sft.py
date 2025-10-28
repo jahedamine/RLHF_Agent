@@ -20,7 +20,7 @@ def train_sft(model_name="gpt2", dataset_name="LDJnr/LessWrong-Amplify-Instruct"
     training_args = TrainingArguments(
         output_dir="./lesswrong-agent-gpt2",
         per_device_train_batch_size=4,
-        num_train_epochs=3,
+        num_train_epochs=4,
         logging_steps=20,
         save_steps=100,
         save_total_limit=2,
@@ -31,7 +31,7 @@ def train_sft(model_name="gpt2", dataset_name="LDJnr/LessWrong-Amplify-Instruct"
     class PrintLossCallback(TrainerCallback):
         def on_log(self, args, state, control, logs=None, **kwargs):
             if logs and "loss" in logs:
-                print(f"🧠 Step {state.global_step} | Loss: {logs['loss']:.4f}")
+                print(f"Step {state.global_step} | Loss: {logs['loss']:.4f}")
 
     trainer = SFTTrainer(
         model=model,
@@ -46,4 +46,4 @@ def train_sft(model_name="gpt2", dataset_name="LDJnr/LessWrong-Amplify-Instruct"
 
 if __name__ == "__main__":
     model, tokenizer = train_sft()
-    print("✅ SFT terminé. Modèle prêt.")
+    print("SFT terminé. Modèle prêt.")
