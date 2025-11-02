@@ -1,4 +1,4 @@
-# 🧠 GenRL++ Agent — Modular RLHF from Scratch
+#  Modular RLHF( PPO ) from Scratch
 
 ## 🔍 Vision
 
